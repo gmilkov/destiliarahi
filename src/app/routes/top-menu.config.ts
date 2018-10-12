@@ -1,7 +1,7 @@
 import { Routes } from "@angular/router";
-import {HomeComponent} from "../components/home.component"
-import { DestinationsComponent } from "../components/destinations.component";
-import { PhotosComponent } from "../components/photos.component";
+import {HomeComponent} from "../top-menu/home.component"
+import { PhotosComponent } from "../top-menu/photos.component";
+import { DestinationComponent } from "../components/destination/destination.component";
 
 export const routerConfig: Routes = [
     {
@@ -10,7 +10,7 @@ export const routerConfig: Routes = [
     }, 
     {
         path: 'destinations',
-        component: DestinationsComponent
+        component: DestinationComponent
     },
     {
         path: 'photos',

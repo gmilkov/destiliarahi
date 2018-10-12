@@ -4,19 +4,19 @@ import {RouterModule} from "@angular/router";
 
 import { AppComponent } from './app.component';
 import { routerConfig } from './routes/top-menu.config';
-import { HomeComponent } from './components/home.component';
-import {DestinationsComponent} from './components/destinations.component';
-import { PhotosComponent } from './components/photos.component';
+import { HomeComponent } from './top-menu/home.component';
+import { PhotosComponent } from './top-menu/photos.component';
+import { DestinationComponent } from './components/destination/destination.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    DestinationsComponent,
-    PhotosComponent
+    PhotosComponent,
+    DestinationComponent
   ],
   imports: [
-    BrowserModule, RouterModule.forRoot(routerConfig)
+    BrowserModule, RouterModule.forRoot(routerConfig, {useHash: true})
   ],
   providers: [],
   bootstrap: [AppComponent]
